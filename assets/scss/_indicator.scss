@@ -1,0 +1,31 @@
+.indicators
+{
+    position: absolute;
+    bottom: 0;
+    left: calc(50% - 100px);
+
+    margin: 5px;
+    padding: 0;
+
+    list-style: none;
+
+    justify-content: center;
+}
+
+.indicator
+{
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+
+    cursor: pointer;
+
+    border: 3px solid rgba($color-light, .5);
+    border-radius: 12px;
+    outline: none;
+}
+
+.indicator.active
+{
+    border-color: $color-light;
+}

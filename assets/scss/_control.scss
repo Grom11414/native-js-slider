@@ -1,0 +1,79 @@
+.control
+{
+    font-weight: 600;
+
+    position: absolute;
+    top: calc(50% - 100px);
+
+    margin: 5px;
+    padding: 5px;
+
+    cursor: pointer;
+    text-align: center;
+
+    color: $color-light;
+
+
+    &-pause
+    {
+        font-size: 110px;
+
+        left: calc(50% - 150px);
+
+        padding: 0;
+
+        transition: opacity .25s ease-out;
+
+        opacity: 0;
+        border: 20px solid $color-light;
+        border-radius: 100%;
+
+        i
+        {
+            padding: 50px;
+        }
+
+        &:hover,
+        &:focus
+        {
+            opacity: .7;
+        }
+    }
+
+    &-prev,
+    &-next
+    {
+        font-size: 50px;
+
+        width: 10%;
+
+        opacity: .6;
+
+        &:hover,
+        &:hover
+        {
+            color: $color-light;
+            background: linear-gradient(to left, rgba($color-dark, .8), rgba($color-dark, 0));
+            text-shadow: 0 0 10px $color-light;
+        }
+    }
+
+    &-prev
+    {
+        left: 0;
+    }
+
+    &-next
+    {
+        right: 0;
+    }
+}
+
+.indicators,
+.controls
+{
+    display: flex;
+
+    user-select: none;
+}
+
